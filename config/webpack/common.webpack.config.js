@@ -28,7 +28,7 @@ function outPath() {
  * @returns {WebpackConfig} webpackConfig
  */
 function getWebpackConfig(skyPagesConfig) {
-  
+
   const resolves = [
     process.cwd(),
     spaPath('node_modules'),
