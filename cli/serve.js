@@ -46,7 +46,7 @@ function serve(argv, skyPagesConfig, webpack, WebpackDevServer) {
 
     // Add webpack rule to update static asset routes to load from localhost instead of relative path.
     config.module.rules.push({
-      test: /\.(html|js)$/,
+      test: /\.html$/,
       loader: 'regexp-replace-loader',
       options: {
         match: {
