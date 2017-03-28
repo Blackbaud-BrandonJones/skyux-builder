@@ -138,7 +138,7 @@ function getWebpackConfig(argv, skyPagesConfig) {
       colors: true,
       compress: true,
       inline: true,
-      contentBase: path.join(process.cwd(), 'src', 'app'),
+      contentBase: path.join(process.cwd(), 'src'),
       historyApiFallback: {
         index: skyPagesConfigUtil.getAppBase(skyPagesConfig)
       },

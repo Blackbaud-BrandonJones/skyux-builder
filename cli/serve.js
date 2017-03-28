@@ -44,8 +44,9 @@ function serve(argv, skyPagesConfig, webpack, WebpackDevServer) {
     // Save our found or defined port
     config.devServer.port = port;
 
+    // Add webpack rule to update static asset routes to load from localhost instead of relative path.
     config.module.rules.push({
-      test: /\.(html)$/,
+      test: /\.(html|js)$/,
       loader: 'regexp-replace-loader',
       options: {
         match: {
